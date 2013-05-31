@@ -32,6 +32,16 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :test do
+  gem 'rake' # for travis, see http://about.travis-ci.org/docs/user/languages/ruby/
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+
+  gem 'minitest-spec-rails' # adds the describe / it test dsl as used in second & third example
+  gem 'capybara_minitest_spec' # adds the capybara expectations as used in the third example
+
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
